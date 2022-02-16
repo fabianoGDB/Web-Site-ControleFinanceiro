@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.22" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.22" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers" />
+      <Folder Include="Views\Gastos" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Pages\**" />
+      <Compile Remove="Views\Cartao\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Pages\**" />
+      <EmbeddedResource Remove="Views\Cartao\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Pages\**" />
+      <None Remove="Views\Cartao\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Pages\**" />
+      <Content Remove="Views\Cartao\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\Cartoes\NovoCartao.cshtml" />
+    </ItemGroup>
+
+</Project>
