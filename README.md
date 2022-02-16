@@ -1,4 +1,4 @@
-#Gerenciador de gastos no cartão
+# Gerenciador de gastos no cartão
 
 suba o banco e faça as migrations e updates, e rode aplicação
 <br>
