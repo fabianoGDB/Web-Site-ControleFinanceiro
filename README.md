@@ -5,7 +5,7 @@ suba o banco e faça as migrations e updates, e rode aplicação
 ```
     ---- Docker --------
     docker-compose build 
-    docker compose up
+    docker-compose up
     
     --- Dotnet Console --
     dotnet ef database update
